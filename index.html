@@ -1,149 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
-    rel="stylesheet">"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrightBlog</title>
+    <title>Kaur Khazana - Jewellery Sets</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fdf6f0; /* Creamy background */
+            color: #5a5a5a; /* Soft grayish-brown for text */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #d7ba99; /* Light creamy header */
+            color: #674321; /* Warm brown */
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav {
+            background-color: #5e3203; /* Creamy navigation bar */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #d4cdc6; /* Warm brown for links */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        h2 {
+            color: #8b5e34; /* Consistent warm brown for headings */
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product-card {
+            background-color: #fff7eb; /* Soft creamy white */
+            border: 1px solid #f0e2d1;
+            border-radius: 8px;
+            margin: 20px;
+            width: 220px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #f0e2d1;
+            padding-bottom: 15px;
+        }
+        .product-card h3 {
+            margin: 15px 0;
+            color: #8b5e34;
+        }
+        .product-card p {
+            font-size: 14px;
+            color: #6f6f6f;
+        }
+        .product-card button {
+            background-color: #f6e9db; /* Light cream for buttons */
+            color: #5a5a5a;
+            border: 1px solid #e2c8b1;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .product-card button:hover {
+            background-color: #e2c8b1; /* Darker creamy hover effect */
+        }
+        footer {
+            background-color: #794206; /* Light creamy footer */
+            color: #faf9f9;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+
 </head>
 <body>
-    <header id="Main-header">
-        <!--the content of the header goes here-->
-        <h1>BrightBlog</h1>
-        <nav>
-            <ul id="nav-ul"
-            <li><a href="https://en.wikipedia.org/wiki/Tulip" class="navbutton">Home</a>
-            </li>
-            <li><a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo" class="navbutton"> Contact us</a>
-            </li>
-            <li><a href="https://en.psg.fr/teams/first-team/squad/kylian-mbappe" class="navbutton"> About us</a>
-            </li>
-        </ul>
-        </nav>
-    </header>
-    <main>
-        <div id="main-content">
-            <aside>
-            <aside>
-            <div>
-                <article>
-                    <header>
-                        <!--Article's header goes here-->
-                        <h2>Ten Amusing Facts About Dogs</h2>
-                        <h3>Read Time: 5 minutes</h3>
-                    </header>
-                    <main>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sapiente, ad maxime est quae quaerat sunt non commodi molestias necessitatibus optio nesciunt porro aliquam libero sint ratione cum nulla quidem amet velit. Ratione laudantium voluptatum non? Culpa esse, facilis, aperiam consequuntur velit tempora optio expedita vel, labore dignissimos voluptas nulla illo fugit minima neque sint aspernatur a molestiae tempore natus quam. Excepturi quo similique voluptates officiis explicabo facilis sint repudiandae dolores. Deleniti placeat expedita in dicta non, maiores omnis necessitatibus soluta magnam blanditiis adipisci hic obcaecati, voluptatibus saepe ex reiciendis minus itaque. Earum necessitatibus dignissimos optio commodi libero, sed esse.</p>
-                    <blockquote>
-                        "I love puppies"- <cite>Zsolt,2024</cite>
-                    </blockquote>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus animi culpa cum natus enim iure voluptatibus quidem minima, ea a reprehenderit, tenetur nobis suscipit dolore consectetur doloribus laudantium blanditiis eligendi!</p>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sapiente nesciunt molestiae doloremque assumenda reiciendis explicabo rerum quisquam deleniti placeat quia vitae, unde ad voluptatem repellat illum praesentium soluta maiores vero iusto a possimus facilis. Dolores cumque commodi fugit facere! Libero, repellendus. Repellat officiis beatae illo at iure non nulla, in perspiciatis iste qui quasi voluptates rerum aut id suscipit. Alias officia recusandae, odio voluptatem, modi numquam aspernatur a molestias facere itaque unde veritatis ipsa maiores at quas, sint corrupti aliquid voluptates dolorum est qui reiciendis eaque minima dolore. Quae quas rem aperiam. Nostrum id nesciunt, alias quas maxime delectus aliquam! Beatae, provident assumenda! Fugit voluptatibus cum, nesciunt modi repellat molestias sequi enim ab ratione molestiae id. Ipsam recusandae nulla quibusdam vitae ab culpa nobis quisquam cumque, odio adipisci quis natus provident quam magnam dolores facilis. Odit adipisci rerum consectetur dignissimos rem corrupti excepturi distinctio, officiis, repellat laudantium libero mollitia.</p>
-                </main>
-                <footer>
-                   <h2>Author: Lovedeep Kaur</h2>
-                   <img src="https://placebear.com/200/300" alt="A profile pic of a bear"> 
-                   <h3>Last posted: 01-08-224</h3>
-                   <a href="https://mail.google.com/mail/u/0/#inbox/FMfcgzQVzNsDCzfPPwdsfLcCxCbkpNGb"target="Blank">Author's Profile</a>
-                </footer>
-            </article>
-            <article>
-                <h4>Filter by Month</h4> 
-                <nav>
-                    <ul>
-                        <li><a href=""></a>Filter for January</li>
-                        <li><a href=""></a>Filter for Februaury</li>
-                        <li><a href=""></a>Filter for March</li>
-                    </ul>
-                </nav>
-            </article>
-            <article>
-                <h4>Filter by Category</h2>
-                <nav>
-                    <ul>
-                        <li><a href="">Puppies</a></li>
-                        <li><a href="">Dogs</a></li>
-                        <li><a href="">Cats</a></li>
-                        <li><a href="">Hedgehongs</a></li>
-                    </ul>
-                </nav>
-            </article>
+
+<header>
+    <h1>Kaur Khazana Jewellery </h1>
+    <p>Your one-stop shop to Unveil Your Radiance and Embrace Your Spirit</p>
+    <div class="header-icons">
+    <i class="fas fa-shopping-basket"></i> <!-- Font Awesome basket icon --> </div>
+</header>
+
+<nav>
+   <a href="#home-section">Home</a>
+    <a href="#about-section">About Us</a>
+    <a href="#shop-section">Shop</a>
+    <a href="#contact-section">Contact Us</a>
+    
+</nav>
+
+<!-- ABout us Section-->
+<section id="about-section" class="about">
+    <h2>About Us</h2>
+    <p>A small business establishd in 2024, with the aim to make costumers feeling unique and elegant with our exquisite jewellery sets, bangles, earrings, rings, bridal jewellery and last but not least anklets!!</p>
+</section>
+
+<div class="container">
+    <section id="shop">
+        <h2>Shop</h2>
+        <div class="product">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <h3>Earrings</h3>
+                <img src= "https://i.pinimg.com/originals/d3/1d/a1/d31da1faa297871cb24bb37c5f1639ba.jpg" alt=" Hooped jhumki">
+                <p>Beautiful hooped jhumki perfect for special occasions.</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <h3>Small earings</h3>
+                <img src="https://media.istockphoto.com/id/1372166563/photo/woman-with-earrings-holding-hair.jpg?s=1024x1024&w=is&k=20&c=CJw-VZAbe5be-slEKRCB8W9LPla3AGGsA-cd9J1p9XY=" alt=" Small earrings">
+                <p>Elegant golden plated small earrings.</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <h3> Necklace chain</h3>
+                <img src="https://media.istockphoto.com/id/1323827093/photo/beautiful-woman-with-necklace-around-her-neck.jpg?s=1024x1024&w=is&k=20&c=wyPe7aQkr9w1Q9MZSsCCGXF-nF-g1geSf9FePbW_Obo=" alt="Necklaces chains">
+
+                <p> necklace chain perfect for daily wear.</p>
+                <button>Add to Cart</button>
+                
             </div>
         </div>
-     
-        <!--main content of the website can go here-->
-        <hr>
-      <h2>Sign up for our newsletter!</h2>
-        <form action=""methodsl> 
-            <label for="first_name">First name</label>
-          <input type="text" id= "first_name" name="first_name" required>
-          <br>
-          <label for="last_name">Last name</label>
-          <input type="text" id=" last_name" name="last-name" required>
-        </br>
+    </section>
+</div>
 
-        <label for=" email">email</label>
-        <input type="email" name="email" id="email">
-        <br>
+<footer>
+  <p>Contact us:</p>  
+  <p> Phone: +44 7123 456789</p>
+  <p>Follow us on Instragram:
+    <a href="https://www.instagram.com/accounts/onetap/?next=%2F&hl=en" target="_blank">
+      @kaur.khazana
+    </a>
+    
+  </p>
+  <p> &copy; 2024 Kaur Khazana. All Rights Reserved.</p>
+</footer>
 
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
-       <br>
-
-        <label for="favourite_animal">Favorite animal</label>
-        <input type="radio" name="favourite_animal" id="dog" value="dog">
-        <label for="dog">Dog</label>
-
-         <input type="radio" name="favourite_animal" id="cat" value="cat">
-        <label for="cat">Cat</label>
-
-        <input type="radio" name="favourite_animal" id="hedgehog" value="hedgehog">
-        <label for="hedgehog">Hedgehog</label>
-        <br>
-
-        <label for="country">Country</label>
-        <select name="country" id="country">
-            <option value="england">England</option>
-            <option value="scotland">Scotland</option>
-            <option value="wales">Wales</option>
-            <option value="northern_ireland">Northern Ireland</option>  </select>
-       <br>
-     <label for="bio">Biography</label>
-     <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
-     <br>
-     <input type="checkbox" id="subscribe" name="subscribe">
-     <label for="subscribe">Subscribe to our newsletter!</label>
-      <br>
-
-      <input type="submit" value="Send!">
-
-
-    </form>
-        <hr>
-    </main>  
-
-
-    <footer>
-        <h2>BrightBlogSite</h2>
-        <section>
-          <nav>
-            <ul id="footer-ul">
-                <div><li><a href="">Home</a></li>
-                    <li><a href="">Conctact us</a></li>
-                    <li><a href="">About us</a></li>
-                    <li><a href="">Careers</a></li>
-                </div>
-                <div>
-                    <li><a href="">Privacy policy</a></li>
-                    <li><a href="">Terms & Conditions</a></li>
-                    <li><a href="">Cookie policy</a></li>
-                </div>
-            </ul>
-          </nav>
-        </section>
-    </footer>    
 </body>
 </html>
